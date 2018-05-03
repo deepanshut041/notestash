@@ -23,7 +23,7 @@ public abstract class BaseFragmentModule {
 
     public static final String FRAGMENT = "BaseFragmentModule.fragment";
 
-    static final String CHILD_FRAGMENT_MANAGER = "BaseFragmentModule.childFragmentManager";
+    public static final String CHILD_FRAGMENT_MANAGER = "BaseFragmentModule.childFragmentManager";
 
     @Provides
     @Named(CHILD_FRAGMENT_MANAGER)
