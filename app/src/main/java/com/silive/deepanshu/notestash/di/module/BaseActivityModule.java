@@ -25,7 +25,7 @@ import dagger.Provides;
 public abstract class BaseActivityModule {
 
 
-    static final String ACTIVITY_FRAGMENT_MANAGER = "BaseActivityModule.activityFragmentManager";
+    public static final String ACTIVITY_FRAGMENT_MANAGER = "BaseActivityModule.activityFragmentManager";
 
     @Provides
     @Named(ACTIVITY_FRAGMENT_MANAGER)
