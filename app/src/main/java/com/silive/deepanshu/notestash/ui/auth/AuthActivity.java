@@ -16,7 +16,7 @@ public class AuthActivity extends BaseActivity implements AuthFragmentListener {
         setContentView(R.layout.activity_auth);
 
         if (savedInstanceState == null) {
-            addFragment(R.id.fragment_container, new AuthFragment());
+            addFragment(R.id.auth_fragment_container, new AuthFragment());
         }
     }
 

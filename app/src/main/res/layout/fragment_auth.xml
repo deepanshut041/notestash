@@ -1,13 +1,38 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.silive.deepanshu.notestash.ui.auth.AuthFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- TODO Design of page -->
+    <Button
+        android:id="@+id/auth_button_login"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Login" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/auth_button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup" />
+
+    <Button
+        android:id="@+id/auth_button_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google" />
+
+    <Button
+        android:id="@+id/auth_button_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook" />
+
+    <Button
+        android:id="@+id/auth_button_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip" />
+
+</LinearLayout>
