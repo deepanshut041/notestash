@@ -21,7 +21,7 @@ import dagger.multibindings.IntoMap;
  * It contains bindings to ensure the usability of dagger.android framework classes
  */
 
-@Module(includes = AndroidInjectionModule.class)
+@Module(includes = AndroidInjectionModule.class, subcomponents = AuthActivitySubcomponent.class)
 public abstract class AppModule {
 
     // TODO (ContributesAndroidInjector) remove this in favor of @ContributesAndroidInjector
@@ -34,6 +34,6 @@ public abstract class AppModule {
     @IntoMap
     @ActivityKey(AuthActivity.class)
     abstract AndroidInjector.Factory<? extends Activity>
-    mainActivityInjectorFactory(AuthActivitySubcomponent.Builder builder);
+    authActivityInjectorFactory(AuthActivitySubcomponent.Builder builder);
 
 }

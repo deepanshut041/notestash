@@ -3,6 +3,8 @@ package com.silive.deepanshu.notestash;
 import android.app.Activity;
 import android.app.Application;
 
+import com.silive.deepanshu.notestash.di.component.DaggerAppComponent;
+
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;
@@ -37,6 +39,6 @@ public class App extends Application implements HasActivityInjector {
 
     @Override
     public AndroidInjector<Activity> activityInjector() {
-        return null;
+        return activityInjector;
     }
 }

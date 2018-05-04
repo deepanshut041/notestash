@@ -19,9 +19,10 @@ import dagger.android.AndroidInjector;
 // TODO (ContributesAndroidInjector) remove this in favor of @ContributesAndroidInjector
 @PerActivity
 @Subcomponent(modules = AuthActivityModule.class)
-public interface AuthActivitySubcomponent {
+public interface AuthActivitySubcomponent extends AndroidInjector<AuthActivity> {
 
     @Subcomponent.Builder
     abstract class Builder extends AndroidInjector.Builder<AuthActivity> {
+
     }
 }
